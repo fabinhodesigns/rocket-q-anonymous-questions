@@ -47,7 +47,7 @@ button,
 }
 
 
-/* Separator Line */
+/* -----------SEPARATOR-------------- */
 
 .separator {
     display: flex;
@@ -71,7 +71,7 @@ button,
 }
 
 
-/*** create balls ***/
+/* -----------BALLS-------------- */
 
 .ball {
     width: 21.2rem;
