@@ -20,13 +20,16 @@
             <img src="assets/logo.svg" alt="Rocket.Q Logo" />
         </header>
 
-        <div id="bg"></div>
+        <div id="bg">
+            <div class="ball top"></div>
+            <div class="ball bottom"></div>
+        </div>
 
         <main>
             <div class="container">
                 <section>
                     <h2>Entre como participante</h2>
-                    <form>
+                    <form action="">
                         <label class="sr-only" for="room-id">Código da sala</label>
                         <input id="room-id" type="number" placeholder="Código da sala" />
                         <button>
@@ -35,18 +38,19 @@
               </button>
                     </form>
                 </section>
+
                 <div class="separator">
                     <div></div>
                     <div>ou</div>
                     <div></div>
-
-                    <section>
-                        <h2>Crie uma sala própria de forma fácil</h2>
-                        <a class="button outlined" href="create-room.html">
-                            <img src="assets/users.svg" alt="Criar sala" /> Criar sala
-                        </a>
-                    </section>
                 </div>
+
+                <section>
+                    <h2>Crie uma sala própria de forma fácil</h2>
+                    <a class="button outlined" href="create-room.html">
+                        <img src="assets/users.svg" alt="Criar sala" /> Criar sala
+                    </a>
+                </section>
             </div>
         </main>
     </div>

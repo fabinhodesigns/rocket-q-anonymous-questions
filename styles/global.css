@@ -22,6 +22,7 @@ html {
 }
 
 body {
+    display: flex;
     height: 100vh;
     background: var(--background);
 }
@@ -30,12 +31,11 @@ body,
 button,
 input,
 textarea {
-    font-size: clamp(14px, 1.6, 2vw);
+    font-size: clamp(14px, 1.6rem, 2vw);
     font-family: "Open Sans", sans-serif;
-    /* font-family: "Poppins", sans-serif; */
 }
 
-.cotent {
+.content {
     width: 100%;
     margin: 0 auto;
 }
