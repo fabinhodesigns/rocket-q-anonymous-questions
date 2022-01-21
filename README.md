@@ -7,5 +7,8 @@
  * CSS
  * JavaScript
  * Node.js
-
+ * EJS
+ * Express
+ * SQLite
+ 
 **Em andamento...**
