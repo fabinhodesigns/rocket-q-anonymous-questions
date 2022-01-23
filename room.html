@@ -8,6 +8,7 @@
     <title>Rocket.Q - Perguntas e Respostas</title>
 
     <link rel="stylesheet" href="styles/room.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -92,13 +93,14 @@
                 </a>
               </div>
             </div>
+
             <div class="question-wrapper">
               <div class="question-content">
                 <div class="user">
                   <img src="/assets/user_transparent.svg" alt="Avatar" />
                 </div>
 
-                <p>O que é JavaScript?</p>
+                <p>Você sabe quais as bases você precisa melhorar para alcançar seu próximo nível com maestria? Você sabe quais as bases você precisa melhorar para alcançar seu próximo nível com maestria?</p>
               </div>
               <div class="actions">
                 <a href="#" class="check">
@@ -111,9 +113,44 @@
                 </a>
               </div>
             </div>
+
+            <div class="question-wrapper read">
+              <div class="question-content">
+                <div class="user">
+                  <img src="/assets/user_transparent.svg" alt="Avatar" />
+                </div>
+
+                <p>O que é JavaScript?</p>
+              </div>
+              <div class="actions">
+                <a href="#" class="delete">
+                  <img src="/assets/trash.svg" alt="Excluir mensagem" />
+                  Excluir
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </main>
     </div>
-  </body>
+
+    <!-- MODAL  -->
+
+    <div class="model-wrapper">
+      <div class="modal">
+        <h2>Excluir</h2>
+        <p>Tem certeza que vocêdeseja excluir essa pergunta?</p>
+        <form>
+          <label for-id="password" class="sr-only">Digite sua senha admin</label>
+                    <input text="password" id="password" name="password" placeholder="Digite sua senha">
+                    <div class="buttons">
+                        <div class="button">Cancelar</div>
+                        <button>Sim, excluir</button>
+                    </div>
+                </form>
+    </div>
+    </div>
+
+</body>
+
 </html>

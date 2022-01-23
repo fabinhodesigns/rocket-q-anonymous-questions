@@ -12,6 +12,4 @@
 - Express
 - SQLite
 
-32:46
-
 **Em andamento...**
