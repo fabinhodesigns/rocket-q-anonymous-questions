@@ -1,0 +1,24 @@
+{
+    "name": "rocket-q-perguntas-anonimas",
+    "version": "1.0.0",
+    "description": "Aplicação desenvolvida para receber perguntas de usuários anônimos para o dono da página.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fabinho070/rocket-q-perguntas-anonimas.git"
+    },
+    "keywords": [],
+    "author": "Fabinho Freitas",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fabinho070/rocket-q-perguntas-anonimas/issues"
+    },
+    "homepage": "https://github.com/fabinho070/rocket-q-perguntas-anonimas#readme",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.2"
+    }
+}
