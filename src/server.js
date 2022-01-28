@@ -9,6 +9,9 @@ server.use(route)
 
 /* CONFIGURAÇÃO EJS*/
 server.set('view engine', 'ejs')
+
+server.use(express.static("public"))
+
 server.set('views', path.join(__dirname, 'views'))
 
 /* INICIAR SERVIDOR NA PORTA 3000*/

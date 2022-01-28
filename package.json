@@ -2,9 +2,9 @@
     "name": "rocket-q-perguntas-anonimas",
     "version": "1.0.0",
     "description": "Aplicação desenvolvida para receber perguntas de usuários anônimos para o dono da página.",
-    "main": "index.js",
+    "main": "src/server.js",
     "scripts": {
-        "start": "node src/server.js"
+        "start": "nodemon ."
     },
     "repository": {
         "type": "git",
@@ -20,5 +20,8 @@
     "dependencies": {
         "ejs": "^3.1.6",
         "express": "^4.17.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
     }
 }
