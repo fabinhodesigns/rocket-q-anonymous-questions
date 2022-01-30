@@ -1,9 +1,9 @@
-.model-wrapper.active {
+.modal-wrapper.active {
     visibility: visible;
     opacity: 1;
 }
 
-.model-wrapper {
+.modal-wrapper {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -16,7 +16,7 @@
     opacity: 0;
 }
 
-.model-wrapper .modal {
+.modal-wrapper .modal {
     min-width: min(59rem, 90%);
     background: var(--white);
     margin: auto;
@@ -26,19 +26,19 @@
     padding: 6.4rem;
 }
 
-.model-wrapper .modal h2 {
+.modal-wrapper .modal h2 {
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
     color: var(--black);
 }
 
-.model-wrapper .modal p {
+.modal-wrapper .modal p {
     margin-bottom: 2.4rem;
     color: var(--grey-dark);
 }
 
-.model-wrapper .modal input {
+.modal-wrapper .modal input {
     margin-bottom: 4rem;
     padding: 1.3rem 1.6rem;
     border: 0.2rem solid var(--blue);
@@ -46,17 +46,17 @@
     width: min(70%, 30.2rem);
 }
 
-.model-wrapper .buttons {
+.modal-wrapper .buttons {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.model-wrapper .modal .buttons>.button {
+.modal-wrapper .modal .buttons>.button {
     margin-right: 0.8rem;
 }
 
-.model-wrapper .modal .buttons>button,
-.model-wrapper .modal .buttons>.button {
+.modal-wrapper .modal .buttons>button,
+.modal-wrapper .modal .buttons>.button {
     padding: 1.3rem 3.2rem;
 }

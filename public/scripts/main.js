@@ -1,10 +1,13 @@
-import { Modal } from './modal';
+import Modal from './modal.js'
 
-const modal = Modal();
+const modal = Modal()
 
-const checkButtons = document.querySelectorAll('a.check'); 
+const checkButtons = document.querySelectorAll('.actions a.check')
 
-//VIDEO - 1:10:31
+checkButtons.forEach(button => {
+    //Adicionar a escuta nos botões
 
-//Abrir a modal
-modal.open();
+    button.addEventListener('click', event => {
+        modal.open()
+    })
+})
