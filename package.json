@@ -4,7 +4,8 @@
     "description": "Aplicação desenvolvida para receber perguntas de usuários anônimos para o dono da página.",
     "main": "src/server.js",
     "scripts": {
-        "start": "nodemon ."
+        "start": "nodemon .",
+        "init-db": "node src/db/init.js"
     },
     "repository": {
         "type": "git",
@@ -19,7 +20,9 @@
     "homepage": "https://github.com/fabinho070/rocket-q-perguntas-anonimas#readme",
     "dependencies": {
         "ejs": "^3.1.6",
-        "express": "^4.17.2"
+        "express": "^4.17.2",
+        "sqlite": "^4.0.23",
+        "sqlite3": "^5.0.2"
     },
     "devDependencies": {
         "nodemon": "^2.0.15"
