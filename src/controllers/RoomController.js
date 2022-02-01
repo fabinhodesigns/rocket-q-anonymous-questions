@@ -42,8 +42,22 @@ module.exports = {
     },
 
     // REABRIR SALA
-    open(req, res) {
+    async open(req, res) {
+        const db = await Database()
         const roomId = req.params.room
-        res.render('room', { roomId: roomId })
+
+        const questions = await db.all(
+            ` SELECT * FROM questions WHERE room = ${roomId} AND read = 0`
+        )
+
+        const questionsRead = await db.all(`
+            SELECT * FROM questions WHERE room = ${roomId} AND read = 1
+        `)
+
+        res.render('room', {
+            roomId: roomId,
+            questions: questions,
+            questionsRead: questionsRead
+        })
     }
 }

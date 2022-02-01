@@ -37,7 +37,7 @@
         <main>
             <section id="question-form">
                 <h2>Faça sua pergunta</h2>
-                <form action="" method="POST">
+                <form action="/question/create/<%= roomId %>" method="POST">
                     <label class="sr-only" for-id="question">O que você quer perguntar?</label
             >
             <textarea
@@ -55,19 +55,17 @@
           </form>
         </section>
 
-        <section id="questions">
-          <h2 class="sr-only">Perguntas da comunidade</h2>
-          <div class="questions">
+            <% questions.forEach(question => { %>
             <div class="question-wrapper">
               <div class="question-content">
                 <div class="user">
                   <img src="/images/user_transparent.svg" alt="Avatar" />
                 </div>
 
-                <p>Qual a diferença entre const, let e var em JavaScript?</p>
+                <p><%= question.title %></p>
               </div>
               <div class="actions">
-                <a href="#" class="check" data-id="2">
+                <a href="#" class="check" data-id=" <%= question.id %>">
                   <img src="/images/check.svg" alt="Marcar como lida" />
                   Marcar como lida
                 </a>
@@ -77,65 +75,27 @@
                 </a>
               </div>
             </div>
-            <div class="question-wrapper">
-              <div class="question-content">
-                <div class="user">
-                  <img src="/images/user_transparent.svg" alt="Avatar" />
-                </div>
+            <% }); %>
 
-                <p>Como usar TypeScript?</p>
-              </div>
-              <div class="actions">
-                <a href="#" class="check" data-id="3">
-                  <img src="/images/check.svg" alt="Marcar como lida" />
-                  Marcar como lida
-                </a>
-                <a href="#" class="delete">
-                  <img src="/images/trash.svg" alt="Excluir mensagem" />
-                  Excluir
-                </a>
-              </div>
-            </div>
-
-            <div class="question-wrapper">
-              <div class="question-content">
-                <div class="user">
-                  <img src="/images/user_transparent.svg" alt="Avatar" />
-                </div>
-
-                <p>
-                  Você sabe quais as bases você precisa melhorar para alcançar
-                  seu próximo nível com maestria? Você sabe quais as bases você
-                  precisa melhorar para alcançar seu próximo nível com maestria?
-                </p>
-              </div>
-              <div class="actions">
-                <a href="#" class="check" data-id="4">
-                  <img src="/images/check.svg" alt="Marcar como lida" />
-                  Marcar como lida
-                </a>
-                <a href="#" class="delete">
-                  <img src="/images/trash.svg" alt="Excluir mensagem" />
-                  Excluir
-                </a>
-              </div>
-            </div>
-
+            <% questionsRead.forEach(questionRead => { %>
             <div class="question-wrapper read">
               <div class="question-content">
                 <div class="user">
                   <img src="/images/user_transparent.svg" alt="Avatar" />
                 </div>
 
-                <p>O que é JavaScript?</p>
+                <p> <%= questionRead.title %> </p>
               </div>
               <div class="actions">
-                <a href="#" class="delete" data-id="1">
+                <a href="#" class="delete" data-id="<%= questionRead.id %>">
                   <img src="/images/trash.svg" alt="Excluir mensagem" />
                   Excluir
                 </a>
               </div>
             </div>
+
+            <% }); %>
+
           </div>
         </section>
       </main>
