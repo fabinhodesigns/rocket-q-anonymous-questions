@@ -17,6 +17,7 @@
 **Após clonar a aplicação em seu computador, rode pelo terminal:**
 
 ```
+npm install
 npm run init-db
 npm start
 
@@ -24,6 +25,7 @@ npm start
 
 **Aonde:**
 
+- npm install - Instalará todas as dependências do projeto.
 - npm run init-db - Ele irá rodar o banco de dados em sua máquina.
 - npm start - Iniciará o servidor na porta 3000.
 
