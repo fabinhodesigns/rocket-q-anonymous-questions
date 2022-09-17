@@ -1,9 +1,8 @@
-# Rocket.Q - Perguntas Anônimas
+# 🎮 Rocket.Q - Anonymous Questions
 
-**Um site com a opção de criar salas de perguntas anônimas aonde qualquer pessoa consegue perguntar sem nenhum cadastro.**
+A website with the option to create anonymous question rooms where anyone can ask without any registration.
 
-**Utilizei as seguintes tecnologias:**
-
+## 🛠️ Technologies
 - HTML
 - CSS
 - JavaScript
@@ -12,9 +11,9 @@
 - Express
 - SQLite
 
-# Como rodar a aplicação?
+# How to run an application?
 
-**Após clonar a aplicação em seu computador, rode pelo terminal:**
+**After cloning the application on your computer, run it from the terminal:**
 
 ```
 npm install
@@ -23,10 +22,14 @@ npm start
 
 ```
 
-**Aonde:**
+**Where:**
 
-- npm install - Instalará todas as dependências do projeto.
-- npm run init-db - Ele irá rodar o banco de dados em sua máquina.
-- npm start - Iniciará o servidor na porta 3000.
+- npm install - Will install all project dependencies.
+- npm run init-db - It will run the database on your machine.
+- npm start - Will start the server on port 3000.
 
-**Estado da aplicação: Concluída.**
+**Application status: Completed.**
+
+## 📞 Contact
+- freitasfabiano08@gmail.com
+- @fabinhofreitastw
