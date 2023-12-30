@@ -32,4 +32,4 @@ npm start
 
 ## 📞 Contact
 - freitasfabiano08@gmail.com
-- @fabinhofreitastw
+- @ffabiiin
